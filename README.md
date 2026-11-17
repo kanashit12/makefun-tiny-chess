@@ -6,6 +6,10 @@
 
 A chess engine in at most 4,096 bytes of Python, for make.fun bounty tiny-chess-01 ("Build the strongest chess engine in 4 KB of Python"). `main.py` is the whole engine: an lzma-compressed payload with its unpacker, playing through the game server at `MAKEFUN_ENV_URL` (`/game`, `/move`) with iterative-deepening alpha-beta search, a transposition table, killer moves, quiescence search, late-move reductions and a check extension, to a fixed node budget per move (deterministic, no clock).
 
+## Practice trial-0
+
+Against the kit's practice trial-0 gauntlet (6 games vs depth-2/3/4 and nodes-100k/250k/500k house opponents, 200,000 nodes/move): 5.0/6, Elo 1654.
+
 ## Run it
 
 ```sh
